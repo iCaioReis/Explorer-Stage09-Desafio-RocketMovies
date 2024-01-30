@@ -6,7 +6,7 @@ export function Header (){
     return(
         <Container>
             <h1>RocketMovies</h1>
-            <Input/>
+            <Input placeholder={"aaa"}/>
             <div>
                 <div>
                     <h2>Caio Reis</h2>
