@@ -1,20 +1,20 @@
-import { Container } from "./styles";
-
 import { Input } from "../Input";
+
+import { Container, Profile} from "./styles";
 
 export function Header (){
     return(
         <Container>
             <h1>RocketMovies</h1>
-            <Input placeholder={"aaa"}/>
-            <div>
+            <Input placeholder={"Pesquisar pelo título"}/>
+            <Profile>
                 <div>
-                    <h2>Caio Reis</h2>
-                    <a href="Sair"></a>
+                    <strong>Caio Reis</strong>
+                    <a href="/">Sair</a>
                 </div>
                 
                 <img src="https://www.github.com/iCaioReis.png" alt="Foto do usuário" />
-            </div>
+            </Profile>
             
         </Container>
     );

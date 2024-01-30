@@ -5,6 +5,10 @@ export const Container = styled.div`
     height: 56px;
     padding: 16px 24px;
 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
     border-radius: 10px;
@@ -22,4 +26,4 @@ export const Container = styled.div`
             ${({ theme }) => theme.COLORS.BACKGROUND_900};
         }
     }
-`;
+`
