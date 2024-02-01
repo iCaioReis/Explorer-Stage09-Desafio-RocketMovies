@@ -15,6 +15,7 @@ export default {
         WHITE: "#FFF",
 
         THEME_COLOR: "#FF859B",
+        THEME_COLOR_500: "rgba(255, 133, 155, 0.05)",
 
     }
 }
