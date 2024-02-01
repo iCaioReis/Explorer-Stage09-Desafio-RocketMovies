@@ -7,7 +7,7 @@ export const Container = styled.div`
     > main {
         padding: 40px 123px;
 
-        div {
+        section {
             display: flex;
             justify-content: space-between;
             
@@ -27,6 +27,12 @@ export const Container = styled.div`
 
 export const Movies = styled.div`
     padding-top: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    overflow-y: auto;
 
 `;
 
@@ -41,8 +47,38 @@ export const Movie = styled.div`
     flex-direction: column;
     gap: 15px;
 
-    > h2 {
+    > div h2 {
         color: ${({ theme }) => theme.COLORS.GRAY_600};
     }
-    
+
+    > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+`;
+
+export const Stars = styled.div`
+    display: flex;
+    justify-content: start;
+
+    > svg {
+        color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
+    }
+`;
+
+export const Tags = styled.div`
+    display: flex;
+    gap: 8px;
+
+    > span {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900}; ;
+        color: ${({ theme }) => theme.COLORS.GRAY_500};
+
+        padding: 5px 16px;
+
+        border-radius: 8px;
+    }
 `;
