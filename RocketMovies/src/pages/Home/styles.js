@@ -5,6 +5,7 @@ export const Container = styled.div`
     height: 100vh;
 
     > main {
+        grid-area: main;
         padding: 40px 123px;
 
         section {
@@ -27,12 +28,12 @@ export const Container = styled.div`
 
 export const Movies = styled.div`
     padding-top: 40px;
-    
+
     display: flex;
     flex-direction: column;
     gap: 24px;
 
-    overflow-y: auto;
+    overflow-y: scroll;
 
 `;
 
