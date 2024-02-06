@@ -5,7 +5,6 @@ export const Container = styled.div`
     height: 100vh;
 
     > main {
-        grid-area: main;
         padding: 40px 123px;
 
         section {
