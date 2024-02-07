@@ -2,7 +2,7 @@ import { Container, Stars, Tags } from "./styles";
 
 import { Header } from "../../components/Header";
 
-import { FiArrowLeft } from "react-icons/fi";
+import { FiArrowLeft, FiClock } from "react-icons/fi";
 import { IoMdStar, IoMdStarOutline } from "react-icons/io";
 
 export function MoviePreview() {
@@ -14,7 +14,7 @@ export function MoviePreview() {
 
                 <a href=""> <FiArrowLeft /> Voltar</a>
 
-                <div>
+                <div className="title">
                     <h1>Interestelar</h1>
                     <Stars>
                         <IoMdStar />
@@ -25,8 +25,10 @@ export function MoviePreview() {
                     </Stars>
                 </div>
 
-                <div>
+                <div className="author">
+                    <img src="https://www.github.com/iCaioReis.png" alt="Foto do autor" />
                     <span>Por Caio Reis</span>
+                    <FiClock/>
                     <span>06/05/22 às 08:00</span>
                 </div>
 

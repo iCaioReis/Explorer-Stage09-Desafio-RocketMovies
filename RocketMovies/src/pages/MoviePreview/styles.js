@@ -6,11 +6,12 @@ export const Container = styled.div `
 
     > main {
         padding: 40px 124px;
-        overflow-y: auto;
-
-        #title {
-            display: flex;
-            margin-top: 150px;
+        
+        
+        svg {
+            color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
+            width: 20px;
+            height: 20px;
         }
 
         a {
@@ -30,16 +31,42 @@ export const Container = styled.div `
             color:  ${({ theme }) => theme.COLORS.GRAY_600};
             text-align: justify;
         }
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            margin-top: 24px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            margin-top: 24px;
+
+            img {
+                width: 16px;
+                height: 16px;
+
+                border-radius: 50%;
+                border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_500};;
+            }
+
+            span {
+                color:  ${({ theme }) => theme.COLORS.GRAY_600};
+            }
+        }
     }
 `;
 
 export const Stars = styled.div`
     display: flex;
     justify-content: start;
+    gap: 10px;
 
-    > svg {
-        color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
-    }
+    padding-left: 20px;
 `;
 
 export const Tags = styled.div`
