@@ -1,12 +1,31 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     width: 100%;
     height: 100vh;
 
+    display: grid;
+    grid-template-rows: 116px auto;
+    grid-template-areas: 
+    "header"
+    "content";
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
+        border-radius: 20px;
+    }
+
     > main {
-        padding: 40px 124px;
-        
+        max-width: 1140px;
+        margin: 40px auto;
+        padding: 0 123px;
+
+        overflow-y: auto;
+        grid-area: content;
         
         svg {
             color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
