@@ -10,15 +10,6 @@ export const Container = styled.div`
     "header"
     "content";
 
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        background-color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
-        border-radius: 20px;
-    }
-
     > main {
         max-width: 1140px;
         margin: 40px auto;

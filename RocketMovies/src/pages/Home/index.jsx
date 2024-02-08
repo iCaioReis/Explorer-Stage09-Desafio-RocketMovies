@@ -11,12 +11,10 @@ export function Home() {
         <Container>
             <Header />
             <main>
-                <section>
+                <header>
                     <h1>Meus Filmes</h1>
                     <Button icon={FiPlus} title={"Adicionar Filme"} />
-                </section>
-
-
+                </header>
 
                 <Movies>
                     <Movie>

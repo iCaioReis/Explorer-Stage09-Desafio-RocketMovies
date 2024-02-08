@@ -28,7 +28,17 @@ export default createGlobalStyle`
         cursor: pointer;
         transition: filter 0.2s;
     }
+
     button:hover, a:hover{
         filter: brightness(0.9);
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color:  ${({ theme }) => theme.COLORS.THEME_COLOR};
+        border-radius: 20px;
     }
 `;

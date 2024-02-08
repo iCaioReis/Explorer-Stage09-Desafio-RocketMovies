@@ -4,12 +4,22 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
 
+    display: grid;
+        grid-template-rows: 116px auto;
+        grid-template-areas: 
+        "header"
+        "movies";
+
     > main {
         padding: 40px 123px;
+        grid-area: movies;
+        overflow-y: auto;
 
-        section {
+        header {
+            grid-area: header;
             display: flex;
             justify-content: space-between;
+
             
             h1 {
                 font-size: 32px;
