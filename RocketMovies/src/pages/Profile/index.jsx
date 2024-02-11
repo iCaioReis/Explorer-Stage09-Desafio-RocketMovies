@@ -4,7 +4,7 @@ import { Container, Form, Avatar } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
-export function Perfil () {
+export function Profile () {
     return(
         <Container>
             <header>

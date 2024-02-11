@@ -60,6 +60,7 @@ export const Avatar = styled.div`
         }
 
         > label {
+
             width: 48px;
             height: 48px;
 
@@ -70,11 +71,11 @@ export const Avatar = styled.div`
             justify-content: center;
             align-items: center;
 
-           position: absolute;
-           right: 7px;
-           bottom: 7px;
+            position: absolute;
+            right: 7px;
+            bottom: 7px;
 
-           cursor: pointer;
+            cursor: pointer;
 
             input {
                 display: none;
@@ -87,4 +88,4 @@ export const Avatar = styled.div`
                 color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
             }
         }
-`
+`;
