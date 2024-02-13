@@ -20,6 +20,19 @@ export const Form = styled.form`
     
     > h1 {
         font-weight: 600;
-        color: ${({ theme }) => theme.COLORS.THEME_COLOR};
+        color: ${({ theme }) => theme.COLORS.GRAY_600};
+
+        margin-top: 40px;
+    }
+
+    > .flex-row {
+        display: flex;
+        gap: 40px;
+
+        margin-top: 40px;
+    }
+
+    > .comments {
+        margin-top: 40px;
     }
 `;

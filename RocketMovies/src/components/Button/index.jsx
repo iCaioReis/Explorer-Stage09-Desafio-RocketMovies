@@ -1,4 +1,4 @@
-import { Container } from "./styles.cjs"
+import { Container } from "./styles.js"
 
 export function Button ({ icon: Icon, invertedColors ,title,...rest }){
     return(
