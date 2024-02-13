@@ -35,4 +35,23 @@ export const Form = styled.form`
     > .comments {
         margin-top: 40px;
     }
+
+    > h2 {
+        margin-top: 40px;
+
+        font-weight: 400;
+        color: ${({ theme }) => theme.COLORS.GRAY_800};
+    }
+
+    .markers {
+        display: flex;
+        gap: 24px;
+        
+        padding: 16px;
+        margin-top: 40px;
+
+        border-radius: 8px;
+
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    }
 `;

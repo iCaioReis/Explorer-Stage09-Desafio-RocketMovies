@@ -2,10 +2,11 @@ import { FiArrowLeft} from "react-icons/fi";
 
 import { Container, Form } from "./styles";
 
-import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
+import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { TextArea } from "../../components/TextArea";
+import { NoteItem } from "../../components/NoteItem";
 
 export function CreateMovie() {
     return(
@@ -25,8 +26,9 @@ export function CreateMovie() {
 
             <h2>Marcadores</h2>
 
-            <div>
-
+            <div className="markers">
+                <NoteItem value={ "teste "} />
+                <NoteItem value="" isNew placeholder={"Novo marcador"} />
             </div>
 
             <div className="flex-row">
