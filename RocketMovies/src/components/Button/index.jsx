@@ -1,8 +1,12 @@
 import { Container } from "./styles.cjs"
 
-export function Button ({ icon: Icon, title, ...rest }){
+export function Button ({ icon: Icon, invertedColors ,title,...rest }){
     return(
-        <Container {...rest}>
+        <Container 
+        {...rest}
+
+        disabled = {invertedColors}
+        >
             { Icon && <Icon size={20}/>}
             { title }
         </Container>

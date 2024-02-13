@@ -29,7 +29,7 @@ export function CreateMovie() {
             </div>
 
             <div>
-                <Button title={"Excluir filme"}/>
+                <Button title={"Excluir filme"} invertedColors/>
                 <Button title={"Salvar alterações"}/>
             </div>
 

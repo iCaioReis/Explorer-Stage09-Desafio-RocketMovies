@@ -14,4 +14,9 @@ export const Container = styled.button`
 
     border: none;
     border-radius: 8px;
+
+    &:disabled {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+        color: ${({ theme }) => theme.COLORS.THEME_COLOR};
+    }
 `;
