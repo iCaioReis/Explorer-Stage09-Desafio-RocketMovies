@@ -2,6 +2,7 @@ import { Container, Stars, Tags } from "./styles";
 
 import { Header } from "../../components/Header";
 
+import { Link } from "react-router-dom";
 import { FiArrowLeft, FiClock } from "react-icons/fi";
 import { IoMdStar, IoMdStarOutline } from "react-icons/io";
 
@@ -12,7 +13,7 @@ export function MoviePreview() {
 
             <main>
 
-                <a href=""> <FiArrowLeft /> Voltar</a>
+                <Link to="/"> <FiArrowLeft /> Voltar</Link>
 
                 <div className="title">
                     <h1>Interestelar</h1>
