@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FiArrowLeft} from "react-icons/fi";
 
 import { Container, Form } from "./styles";
@@ -14,7 +15,7 @@ export function CreateMovie() {
             <Header/>
 
         <Form>
-            <a href=""> <FiArrowLeft/> Voltar</a>
+            <Link to={"/"}> <FiArrowLeft/> Voltar</Link>
             <h1>Novo filme</h1>
 
             <div className="flex-row">

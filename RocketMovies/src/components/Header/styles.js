@@ -13,7 +13,7 @@ export const Container = styled.header`
 
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_500};
 
-    > h1 {
+    h1 {
         color: ${({ theme }) => theme.COLORS.THEME_COLOR};
         font-size: 24px;
         font-weight: 700;
@@ -24,7 +24,7 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
 
-    > img {
+    img {
         width: 64px;
         height: 64px;
 

@@ -67,6 +67,7 @@ export const Movie = styled.div`
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        color: ${({ theme }) => theme.COLORS.GRAY_800};
     }
 `;
 
