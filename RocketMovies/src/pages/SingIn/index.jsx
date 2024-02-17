@@ -1,8 +1,9 @@
-import { Container, Form, BackGround } from "./styles";
+import { Link } from "react-router-dom";
+import { FiMail, FiLock} from "react-icons/fi";
+
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-
-import { FiMail, FiLock} from "react-icons/fi"
+import { Container, Form, BackGround } from "./styles";
 
 export function SingIn(){
     return (
@@ -18,7 +19,7 @@ export function SingIn(){
 
                 <Button title={"Entrar"}/>
 
-                <a href="/">Criar conta</a>
+                <Link to="/register">Criar conta</Link>
             </Form>
             <BackGround/>
         </Container>
